@@ -6,6 +6,8 @@ import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import "./db/sdk";
+import CircularProgress from "./components/progress/CircularProgress";
+import usePageProgress from "./hooks/usePageProgress";
 
 const App = () => {
   // show hashlink
@@ -22,6 +24,7 @@ const App = () => {
       }
     }, 0);
   }, [hash]);
+  const progress = usePageProgress();
 
   // smooth scroll to top on start
   useEffect(() => {
@@ -38,6 +41,7 @@ const App = () => {
           <Projects />
           <Contact />
         </main>
+        <CircularProgress progress={progress} />
       </div>
     </>
   );

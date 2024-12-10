@@ -76,3 +76,26 @@ a * {
 .font-rajdhani {
   font-family: "Rajdhani", serif;
 }
+
+.circle {
+  height: 124px;
+  width: 124px;
+}
+
+.circle:hover .foreground {
+  stroke-dashoffset: 0;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.foreground {
+  fill: transparent;
+  stroke-dasharray: 377;
+  stroke-dashoffset: 377;
+  stroke: #ee3769;
+  -webkit-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  transition: all 0.8s ease;
+}

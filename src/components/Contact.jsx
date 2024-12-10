@@ -1,7 +1,6 @@
 import { getDatabase, push, ref, set } from "firebase/database";
 import { useState } from "react";
 import { sendEmail } from "./sendEmail";
-// import { sendEmail } from "./sendEmail";
 
 const Contact = () => {
   const [formData, setFormData] = useState({});
@@ -23,8 +22,8 @@ const Contact = () => {
     <>
       <section id="contact">
         <p className="text-sm mb-6">04/ Contact</p>
-        <h1 className="text-7xl">Let&#39;s</h1>
-        <h1 className="text-7xl outline-text mt-0">Discuss</h1>
+        <h1 className="text-5xl md:text-7xl">Let&#39;s</h1>
+        <h1 className="text-5xl md:text-7xl outline-text mt-0">Discuss</h1>
         {/* Contact Form */}
         <form
           onSubmit={(e) => {
@@ -35,7 +34,7 @@ const Contact = () => {
         >
           <input
             type="text"
-            className="border-b-2 focus:outline-none focus:border-[#7a3b6b] mt-10 text-3xl w-full md:max-w-2xl placeholder:text-zinc-300 transition"
+            className="border-b-2 focus:outline-none focus:border-[#7a3b6b] mt-10 text-xl md:text-3xl w-full md:max-w-2xl placeholder:text-zinc-300 transition"
             placeholder="Name"
             name="name"
             onChange={(e) => {
@@ -47,7 +46,7 @@ const Contact = () => {
           <input
             type="email"
             name="email"
-            className="border-b-2 focus:outline-none focus:border-[#7a3b6b] mt-10 text-3xl w-full md:max-w-2xl placeholder:text-zinc-300 transition"
+            className="border-b-2 focus:outline-none focus:border-[#7a3b6b] mt-10 text-xl md:text-3xl w-full md:max-w-2xl placeholder:text-zinc-300 transition"
             placeholder="Email"
             onChange={(e) => {
               const { name, value } = e.target;
@@ -56,7 +55,7 @@ const Contact = () => {
             required
           />
           <textarea
-            className="border-b-2 focus:outline-none focus:border-[#7a3b6b] mt-16 text-3xl w-full md:max-w-2xl placeholder:text-zinc-300 transition h-36"
+            className="border-b-2 focus:outline-none focus:border-[#7a3b6b] mt-16 text-xl md:text-3xl w-full md:max-w-2xl placeholder:text-zinc-300 transition h-20 md:h-36"
             placeholder="Your Message"
             name="message"
             onChange={(e) => {
