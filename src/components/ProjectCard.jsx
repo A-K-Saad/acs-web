@@ -4,9 +4,12 @@ const ProjectCard = ({ project }) => {
       <div className="flex flex-col lg:items-end gap-2">
         <div className="flex lg:flex-row-reverse items-center gap-3 md:gap-6">
           <div className="bg-accent h-4 w-4 md:h-6 md:w-6 rounded-full"></div>
-          <h1 className="text-4xl md:text-6xl font-rajdhani font-medium">
-            {project.name}
-          </h1>
+
+          <a href={project.link} target="_blank">
+            <h1 className="text-4xl md:text-6xl font-rajdhani font-medium">
+              {project.name}
+            </h1>
+          </a>
         </div>
         <div className="relative flex-1 w-full">
           <svg
@@ -36,7 +39,7 @@ const ProjectCard = ({ project }) => {
               <div className="absolute inset-0 bg-black/5 rounded-2xl flex items-center justify-center"></div>
             </div>
             {/* Project image for small device */}
-            <div className="relative w-full h-40 md:h-auto lg:hidden">
+            <div className="relative w-full h-48 md:h-auto lg:hidden">
               <img
                 className="w-full h-full object-cover rounded-md"
                 src={project.img}
@@ -48,12 +51,16 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row lg:items-center justify-between md:gap-6 gap-3 mb-10">
-        <h1 className="md:text-5xl text-2xl font-rajdhani font-medium whitespace-pre-line">
-          {project.abbr}
-        </h1>
-        <p className="max-w-xl sm:text-xl font-thin text-gray-600">
-          {project.excerpt}
-        </p>
+        <a href={project.link} target="_blank">
+          <h1 className="md:text-5xl text-2xl font-rajdhani font-medium whitespace-pre-line">
+            {project.abbr}
+          </h1>
+        </a>
+        <a href={project.link} target="_blank">
+          <p className="max-w-xl sm:text-xl font-thin text-gray-600">
+            {project.excerpt}
+          </p>
+        </a>
       </div>
     </div>
   );

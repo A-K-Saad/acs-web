@@ -28,18 +28,18 @@ const Skills = () => {
   return (
     <>
       <section id="skills">
-        <p className="text-sm mb-6">01/ Skills</p>
+        <p className="text-sm mb-6">02/ Skills</p>
         <div className="grid grid-cols-2 md:grid-cols-3 uppercase border-t border-l">
           {skills.map((s, i) => {
             return (
               <div
-                className={`p-2 md:p-4 border-b border-r hover:bg-gray-50 transition flex items-center space-x-2 md:space-x-3 text-xs md:text-base truncate ${
+                className={`p-3 md:p-4 border-b border-r hover:bg-gray-50 transition flex items-center space-x-2 md:space-x-3 text-sm md:text-base ${
                   i % 2 == 0 && "bg-gray-50"
                 }`}
                 key={i}
               >
                 <span className="text-xl md:text-3xl">{s.icon}</span>
-                <span>{s.name}</span>
+                <span className="truncate">{s.name}</span>
               </div>
             );
           })}

@@ -6,11 +6,13 @@ import { sendEmail } from "./sendEmail";
 const Contact = () => {
   const [formData, setFormData] = useState({});
 
+  // pushing data to database
   const sendMessage = () => {
     set(push(ref(getDatabase(), "messages/")), {
       ...formData,
     })
       .then(() => {
+        // sending email
         sendEmail(formData);
         alert("Thanks for sending your message!");
       })
@@ -20,9 +22,10 @@ const Contact = () => {
   return (
     <>
       <section id="contact">
-        <p className="text-sm mb-6">03/ Contact</p>
+        <p className="text-sm mb-6">04/ Contact</p>
         <h1 className="text-7xl">Let&#39;s</h1>
         <h1 className="text-7xl outline-text mt-0">Discuss</h1>
+        {/* Contact Form */}
         <form
           onSubmit={(e) => {
             e.preventDefault();

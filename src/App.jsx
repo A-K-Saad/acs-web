@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import Navigation from "./components/Navigation";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import "./db/sdk";
-import AboutMe from "./components/Home/AboutMe";
-import Contact from "./components/Home/Contact";
-import Navigation from "./components/Home/Navigation";
-import Projects from "./components/Home/Projects";
-import Skills from "./components/Home/Skills";
 
 const App = () => {
+  // show hashlink
   const { hash, pathname } = useLocation();
 
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
     }, 0);
   }, [hash]);
 
+  // smooth scroll to top on start
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);

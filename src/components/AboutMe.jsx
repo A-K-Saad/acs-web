@@ -1,11 +1,12 @@
-import aksaad from "../../assets/images/profile.png";
+import aksaad from "../assets/images/profile.png";
 const AboutMe = () => {
   return (
     <>
       {/* About Me section */}
       <section id="about">
-        <p className="text-sm mb-3 md:mb-0">00/ About</p>
+        <p className="text-sm mb-3 md:mb-0">01/ About</p>
         <div className="flex flex-col md:flex-row items-center justify-between md:space-x-12 lg:space-x-16">
+          {/* About Description */}
           <div className="order-2">
             <div className="mb-2 mt-3 pl-2 text-base flex items-center space-x-3">
               <span className="h-[2px] w-10 bg-black"></span>
@@ -18,14 +19,16 @@ const AboutMe = () => {
               Passionate Full-stack Web Developer based in Bangladesh. Crafting
               aesthetic, performant Web Applications that provide seamless user
               experiences. <br /> <br />
-              Studying in 11th grade in Secondary High School. Love creating
-              creative web application. I have also expertise in C programming.
+              Love creating creative web application. Also have basic expertise
+              in programming. Currently studying in 11th grade in Secondary High
+              School.
             </p>
             <div className="mb-2 mt-3 pl-2 text-base flex items-center space-x-3">
               <span className="h-[2px] w-10 bg-black"></span>
               <span>Get in Touch</span>
             </div>
           </div>
+          {/* Image */}
           <div className="flex items-end order-first md:order-last">
             <img
               src={aksaad}

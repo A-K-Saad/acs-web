@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import foodie from "../../assets/images/foodieS.png";
-import socioHood from "../../assets/images/socio-hood.png";
+import foodie from "../assets/images/foodieS.png";
+import socioHood from "../assets/images/socio-hood.png";
 import { VscLinkExternal } from "react-icons/vsc";
 
 const Projects = () => {
@@ -12,7 +12,7 @@ const Projects = () => {
       abbr: "E-commerce Website",
       img: foodie,
       excerpt:
-        "E-commerce website for helping people order their daily necessary foods online. User-friendly ui and personalized dashboard. Secured with razorpay payment.",
+        "E-commerce website for helping people order their necessary daily foods online. User-friendly and secured with razorpay payment.",
       link: "https://foodie-mart.web.app/",
     },
     {
@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <>
       <section id="projects">
-        <p className="text-sm mb-6">02/ Projects</p>
+        <p className="text-sm mb-6">03/ Projects</p>
         <div className="max-w-6xl mx-auto pb-20">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />

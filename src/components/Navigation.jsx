@@ -19,16 +19,16 @@ const Navigation = () => {
             }`}
           >
             <Link to="/#about" className="text-2xl md:text-3xl block">
-              <span className="text-sm">00/</span> About
+              <span className="text-sm">01/</span> About
             </Link>
             <Link to="/#skills" className="text-2xl md:text-3xl block">
-              <span className="text-sm">01/</span> Skills
+              <span className="text-sm">02/</span> Skills
             </Link>
             <Link to="/#projects" className="text-2xl md:text-3xl block">
-              <span className="text-sm">02/</span> Projects
+              <span className="text-sm">03/</span> Projects
             </Link>
             <Link to="/#contact" className="text-2xl md:text-3xl block">
-              <span className="text-sm">03/</span> Contact
+              <span className="text-sm">04/</span> Contact
             </Link>
           </div>
           <button
