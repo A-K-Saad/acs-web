@@ -1,7 +1,11 @@
 import { useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-import Home from "./pages/Home";
+import { useLocation } from "react-router-dom";
 import "./db/sdk";
+import AboutMe from "./components/Home/AboutMe";
+import Contact from "./components/Home/Contact";
+import Navigation from "./components/Home/Navigation";
+import Projects from "./components/Home/Projects";
+import Skills from "./components/Home/Skills";
 
 const App = () => {
   const { hash, pathname } = useLocation();
@@ -24,9 +28,15 @@ const App = () => {
 
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
+      <div className="container m-auto px-4 lg:px-12">
+        <Navigation />
+        <main className="py-5 md:py-10 space-y-24">
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+      </div>
     </>
   );
 };
