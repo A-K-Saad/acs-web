@@ -27,9 +27,9 @@ const Projects = () => {
   ]);
   return (
     <>
-      <section>
+      <section id="projects">
         <p className="text-sm mb-6">02/ Projects</p>
-        <div className="max-w-6xl mx-auto md:px-6 pb-20">
+        <div className="max-w-6xl mx-auto pb-20">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

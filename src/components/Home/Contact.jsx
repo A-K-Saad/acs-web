@@ -19,7 +19,7 @@ const Contact = () => {
 
   return (
     <>
-      <section>
+      <section id="contact">
         <p className="text-sm mb-6">03/ Contact</p>
         <h1 className="text-7xl">Let&#39;s</h1>
         <h1 className="text-7xl outline-text mt-0">Discuss</h1>

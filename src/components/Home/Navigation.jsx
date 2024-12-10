@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -6,7 +7,7 @@ const Navigation = () => {
   return (
     <>
       {/* Navigation section */}
-      <nav className="flex justify-between items-center sticky z-50 p-3 md:p-10">
+      <nav className="flex justify-between items-center sticky top-0 z-50 py-3 md:pt-5 bg-white/90">
         <div>
           <p className="text-lg leading-tight">A K Saad</p>
           <p className="text-sm opacity-80">Web Developer</p>
@@ -17,18 +18,18 @@ const Navigation = () => {
               isMenuOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
             }`}
           >
-            <h1 className="text-2xl md:text-3xl">
+            <Link to="/#about" className="text-2xl md:text-3xl block">
               <span className="text-sm">00/</span> About
-            </h1>
-            <h1 className="text-2xl md:text-3xl">
-              <span className="text-sm">01/</span> Projects
-            </h1>
-            <h1 className="text-2xl md:text-3xl">
-              <span className="text-sm">02/</span> Experience
-            </h1>
-            <h1 className="text-2xl md:text-3xl">
+            </Link>
+            <Link to="/#skills" className="text-2xl md:text-3xl block">
+              <span className="text-sm">01/</span> Skills
+            </Link>
+            <Link to="/#projects" className="text-2xl md:text-3xl block">
+              <span className="text-sm">02/</span> Projects
+            </Link>
+            <Link to="/#contact" className="text-2xl md:text-3xl block">
               <span className="text-sm">03/</span> Contact
-            </h1>
+            </Link>
           </div>
           <button
             type="button"

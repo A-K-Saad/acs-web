@@ -27,7 +27,7 @@ const Skills = () => {
 
   return (
     <>
-      <section>
+      <section id="skills">
         <p className="text-sm mb-6">01/ Skills</p>
         <div className="grid grid-cols-2 md:grid-cols-3 uppercase border-t border-l">
           {skills.map((s, i) => {

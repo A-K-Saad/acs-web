@@ -5,6 +5,7 @@ import "./db/sdk";
 
 const App = () => {
   const { hash, pathname } = useLocation();
+
   useEffect(() => {
     setTimeout(() => {
       if (hash) {
@@ -20,9 +21,6 @@ const App = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-
-  // const { user } = useData() || {};
-  // console.log("from App.js " + user);
 
   return (
     <>
