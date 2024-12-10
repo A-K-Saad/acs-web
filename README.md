@@ -12,6 +12,7 @@ A brief description of what this project does and who it's for
 
 - Sending email via contact form
 - Saving form Data in Firebase Realtime Database
+- Circular progress bar for page scroll
 
 ## Live Link
 
