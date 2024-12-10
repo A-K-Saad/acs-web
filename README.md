@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A brief description of what this project does and who it's for
+A brief description of the project
 
 ## Tech Stack
 
