@@ -7,7 +7,7 @@ const Navigation = () => {
   return (
     <>
       {/* Navigation section */}
-      <nav className="flex justify-between items-center sticky top-0 z-50 py-3 md:pt-5 bg-white/90">
+      <nav className="flex justify-between items-center sticky top-0 z-50 py-3 md:py-4 bg-white/90">
         <div>
           <p className="text-lg leading-tight">A K Saad</p>
           <p className="text-sm opacity-80">Web Developer</p>
